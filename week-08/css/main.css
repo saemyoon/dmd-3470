@@ -1,0 +1,84 @@
+/* ============================================
+   Tailwind-Enhanced Custom Styles
+   ============================================ */
+
+.picture-placeholder {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Demos - 기본값 (모바일: bg-small.jpg) */
+.bg-contain-demo,
+.bg-cover-demo {
+    min-height: 300px;
+    border: 3px solid #698b9c;
+    border-radius: 12px;
+    position: relative;
+    background-image: url('../images/bg-small.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* contain: 이미지 전체가 보임 (빈 공간 생길 수 있음) */
+.bg-contain-demo {
+    background-size: contain;
+}
+
+/* cover: 컨테이너를 꽉 채움 (이미지 잘릴 수 있음) */
+.bg-cover-demo {
+    background-size: cover;
+}
+
+/* ============================================
+   MEDIA QUERIES - Exercise 2
+   ============================================ */
+
+/* 태블릿 이상 */
+@media (min-width: 700px) {
+    .bg-contain-demo,
+    .bg-cover-demo {
+        background-image: url('../images/bg-medium.jpg');
+    }
+}
+
+/* 데스크탑 이상 */
+@media (min-width: 1000px) {
+    .bg-contain-demo,
+    .bg-cover-demo {
+        background-image: url('../images/bg-large.jpg');
+    }
+}
+
+/* Image-Set Demo Container */
+.image-set-demo {
+    width: 100%;
+    height: 400px;
+    border: 3px solid #9B59B6;
+    border-radius: 12px;
+    position: relative;
+    background-image: image-set(
+        url('../images/pattern-1x.jpg') 1x,
+        url('../images/pattern-2x.jpg') 2x,
+        url('../images/pattern-3x.jpg') 3x
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Demo Labels */
+.demo-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0 0 8px 8px;
+    font-weight: 500;
+}
