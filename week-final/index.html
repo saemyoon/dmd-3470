@@ -32,7 +32,9 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <!-- App logo/name -->
-        <a class="navbar-brand" href="#">[App Logo]</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/spotify-logo-black.png" alt="App Logo" height="32">
+        </a>
 
         <!-- Mobile toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -42,11 +44,11 @@
         <!-- Nav links -->
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Menu 1</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 4</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Review</a></li>
           </ul>
         </div>
       </div>
@@ -60,20 +62,28 @@
       <div class="container">
         <div class="row align-items-center">
 
-          <!-- Left: text -->
-          <div class="col-12 col-lg-6">
-            <p class="hero-tag">[Tag]</p>
-            <h1 class="hero-title">[Hero Title]</h1>
-            <p class="hero-subtext">[Hero subtext]</p>
-            <div class="hero-buttons">
-              <button type="button">[Button 1]</button>
-              <button type="button">[Button 2]</button>
+          <!-- Title + Subtitle -->
+          <div class="col-12 col-lg-6 order-1 order-lg-1 text-center text-lg-start">
+            <h1 class="hero-title">Hit Play <br> Feel Everything</h1>
+            <p class="hero-subtext">Stream millions of songs and podcasts, curated just for you.</p>
+            <!-- Buttons: desktop only -->
+            <div class="hero-buttons d-none d-lg-flex">
+              <button type="button" class="btn-hero">Download App</button>
+              <button type="button" class="btn-hero">Discover More</button>
             </div>
           </div>
 
-          <!-- Right: image (TBD) -->
-          <div class="col-12 col-lg-6">
-            <img src="https://placehold.co/400x600" alt="App screenshot">
+          <!-- image (ipod) -->
+          <div class="col-12 col-lg-6 order-2 order-lg-2 text-center">
+            <img src="img/ipod.png" alt="App screenshot">
+          </div>
+
+          <!-- Buttons: mobile/tablet only -->
+          <div class="col-12 order-3 d-lg-none text-center">
+            <div class="hero-buttons justify-content-center">
+              <button type="button" class="btn-hero">Download App</button>
+              <button type="button" class="btn-hero">Discover More</button>
+            </div>
           </div>
 
         </div>
