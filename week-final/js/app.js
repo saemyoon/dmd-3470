@@ -69,3 +69,30 @@ if (wheel && slider) {
     accumulated = 0;
   });
 }
+
+const ipodImg = document.querySelector('.ipod-wrapper');
+
+function playShake() {
+  ipodImg.classList.add('animate__animated', 'animate__headShake');
+  ipodImg.addEventListener('animationend', () => {
+    ipodImg.classList.remove('animate__animated', 'animate__headShake');
+  }, { once: true });
+}
+
+// 페이지 로드 후 
+setTimeout(playShake, 1500);
+
+// 이후 8초마다 반복
+setInterval(playShake, 8000);
+
+// 휠 조작 중 애니메이션 제거
+if (wheel) {
+  wheel.addEventListener('mousemove', () => {
+    ipodImg.classList.remove('animate__animated', 'animate__headShake');
+  });
+}
+
+AOS.init({
+  duration: 900,
+  once: true
+});

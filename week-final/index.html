@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -67,9 +69,9 @@
 
           <!-- Title + Subtitle -->
           <div class="col-12 col-lg-6 order-1 order-lg-1 text-center text-lg-start">
-            <h1 class="hero-title">Hit Play <br> Feel Everything</h1>
-            <p class="hero-subtext">Stream millions of songs and podcasts, curated just for you.<br>
-             Scroll the wheel to explore new albums!
+            <h1 class="hero-title" data-aos="fade-up">Hit Play <br> Feel Everything</h1>
+            <p class="hero-subtext" data-aos="fade-up" data-aos-delay="200">Stream millions of songs and podcasts, curated just for you.<br>
+              Scroll the wheel to explore new albums!
             </p>
             <!-- Buttons: desktop only -->
             <div class="hero-buttons d-none d-lg-flex">
@@ -119,13 +121,13 @@
     <!-- ========== SECTION 1 ========== -->
     <section id="features">
       <div class="container">
-        <h2 class="section-title">Everything You Need to Listen Better</h2>
-        <p class="section-subhead">Discover music, podcasts, and audiobooks — all in one place, personalized just for
+        <h2 class="section-title" data-aos="fade-up">Everything You Need to Listen Better</h2>
+        <p class="section-subhead" data-aos="fade-up" data-aos-delay="200">Discover music, podcasts, and audiobooks — all in one place, personalized just for
           you. <br>Stream, download, and listen seamlessly across all your devices.</p>
 
         <div class="row">
           <!-- Card 1 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="feature-card">
               <div class="feature-icon">
                 <i data-lucide="headphones"></i>
@@ -136,7 +138,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="550">
             <div class="feature-card">
               <div class="feature-icon"><i data-lucide="fast-forward"></i></div>
               <h3 class="card-title">Listen Without Limits</h3>
@@ -145,7 +147,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="feature-card">
               <div class="feature-icon"><i data-lucide="music"></i></div>
               <h3 class="card-title">Your Music, Everywhere</h3>
@@ -162,19 +164,19 @@
     <section id="how-it-works">
       <div class="container">
         <!-- h2: 모바일/태블릿에서만 이미지 위에 표시 -->
-        <h2 class="section-title d-lg-none text-center">Get Started in Minutes</h2>
+        <h2 class="section-title d-lg-none text-center" data-aos="fade-up">Get Started in Minutes</h2>
 
         <div class="row align-items-center">
           <!-- Right: image -->
           <div class="col-12 col-lg-6">
-            <img src="img/iphone_1.png" alt="App screenshot">
+            <img src="img/iphone_1.png" alt="App screenshot" data-aos="zoom-in" >
           </div>
           <!-- Left: steps -->
           <div class="col-12 col-lg-5 offset-lg-1">
             <!-- h2: 데스크탑에서만 스텝 위에 표시 -->
-            <h2 class="section-title d-none d-lg-block">Get Started in Minutes</h2>
+            <h2 class="section-title d-none d-lg-block" data-aos="fade-up">Get Started in Minutes</h2>
             <!-- Step 1 -->
-            <div class="step">
+            <div class="step" data-aos="fade-up" data-aos-delay="200">
               <div class="step-icon"><i data-lucide="user-plus"></i></div>
               <div class="step-text">
                 <h3 class="step-title">Create Your Account</h3>
@@ -182,7 +184,7 @@
               </div>
             </div>
             <!-- Step 2 -->
-            <div class="step">
+            <div class="step" data-aos="fade-up" data-aos-delay="400">
               <div class="step-icon"><i data-lucide="search-check"></i></div>
               <div class="step-text">
                 <h3 class="step-title">Find What You Love</h3>
@@ -191,7 +193,7 @@
               </div>
             </div>
             <!-- Step 3 -->
-            <div class="step">
+            <div class="step" data-aos="fade-up" data-aos-delay="600">
               <div class="step-icon"><i data-lucide="music-2"></i></div>
               <div class="step-text">
                 <h3 class="step-title">Start Listening</h3>
@@ -219,8 +221,8 @@
           <!-- Right: text -->
           <div class="col-12 col-lg-6 pe-lg-5">
 
-            <h2 class="section-title">Made for Your Taste</h2>
-            <p class="section-description">Spotify builds your personal soundtrack from the moment you sign up. Based on
+            <h2 class="section-title" data-aos="fade-up">Made for Your Taste</h2>
+            <p class="section-description" data-aos="fade-up" data-aos-delay="200">Spotify builds your personal soundtrack from the moment you sign up. Based on
               your listening habits, it creates Recommended Stations, curated mixes, and artist radio tailored
               specifically to you. The more you listen, the smarter it gets — surfacing new artists you'll love while
               keeping your favorite sounds front and center.
@@ -230,7 +232,7 @@
           </div>
           <!-- Left: image (TBD) -->
           <div class="col-12 col-lg-6">
-            <img src="img/iphone_2.png" alt="App screenshot">
+            <img src="img/iphone_2.png" alt="App screenshot" data-aos="zoom-in">
           </div>
         </div>
       </div>
@@ -243,13 +245,13 @@
 
           <!-- 이미지: 데스크탑 왼쪽, 모바일/태블릿 아래 -->
           <div class="col-12 col-lg-6 order-2 order-lg-1">
-            <img src="img/iphone_3.png" alt="App screenshot">
+            <img src="img/iphone_3.png" alt="App screenshot" data-aos="zoom-in">
           </div>
 
           <!-- 텍스트: 데스크탑 오른쪽, 모바일/태블릿 위 -->
           <div class="col-12 col-lg-6 ps-lg-5 order-1 order-lg-2">
-            <h2 class="section-title">More Than Just Music</h2>
-            <p class="section-description">Spotify is more than a music app. With Premium, you get unlimited access to
+            <h2 class="section-title" data-aos="fade-up">More Than Just Music</h2>
+            <p class="section-description" data-aos="fade-up" data-aos-delay="200">Spotify is more than a music app. With Premium, you get unlimited access to
               millions of audiobooks and thousands of podcasts — all in one place. Whether you're into true crime,
               self-help, fiction, or daily news, there's always something worth listening to. Start a book on your
               commute and finish it on your couch, without missing a beat.</p>
@@ -275,11 +277,11 @@
     <!-- ========== SECTION 5 ========== -->
     <section id="pricing">
       <div class="container">
-        <h2 class="section-title text-center">Choos Your Plan</h2>
+        <h2 class="section-title text-center" data-aos="fade-up">Choos Your Plan</h2>
 
         <div class="row">
           <!-- Plan 1 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-card">
               <p class="plan-tier">Starter</p>
               <h3 class="plan-title">Free</h3>
@@ -295,7 +297,7 @@
             </div>
           </div>
           <!-- Plan 2 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="550">
             <div class="pricing-card">
               <p class="plan-tier">Premium Individual</p>
               <h3 class="plan-title">$9.99</h3>
@@ -311,7 +313,7 @@
             </div>
           </div>
           <!-- Plan 3 -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="pricing-card">
               <p class="plan-tier">Premium Duo</p>
               <h3 class="plan-title">$13.99</h3>
@@ -334,7 +336,7 @@
     <!-- ========== USER REVIEW ========== -->
     <section id="reviews">
       <div class="container">
-        <h2 class="section-title text-center">User Review</h2>
+        <h2 class="section-title text-center" data-aos="fade-up">User Review</h2>
         <div class="review-card">
           <img src="img/review-img.png" alt="Sarah K." class="reviewer-img">
           <p class="review-description">"Spotify completely changed how I listen to music. The personalized playlists
@@ -359,9 +361,9 @@
     </div>
   </footer>
 
-  <script src="js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
