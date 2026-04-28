@@ -68,7 +68,9 @@
           <!-- Title + Subtitle -->
           <div class="col-12 col-lg-6 order-1 order-lg-1 text-center text-lg-start">
             <h1 class="hero-title">Hit Play <br> Feel Everything</h1>
-            <p class="hero-subtext">Stream millions of songs and podcasts, curated just for you.</p>
+            <p class="hero-subtext">Stream millions of songs and podcasts, curated just for you.<br>
+             Scroll the wheel to explore new albums!
+            </p>
             <!-- Buttons: desktop only -->
             <div class="hero-buttons d-none d-lg-flex">
               <button type="button" class="btn-hero">Download App</button>
@@ -78,7 +80,28 @@
 
           <!-- image (ipod) -->
           <div class="col-12 col-lg-6 order-2 order-lg-2 text-center">
-            <img src="img/ipod.png" alt="App screenshot">
+            <div class="ipod-wrapper">
+              <img src="img/ipod-sticker.png" alt="iPod" class="ipod-img">
+              <!-- 스크린 오버레이 -->
+              <div class="ipod-screen">
+                <div class="album-track">
+                  <div class="album-slider" id="albumSlider">
+                    <img src="img/album1.jpg" alt="Album 1">
+                    <img src="img/album2.jpg" alt="Album 2">
+                    <img src="img/album3.jpg" alt="Album 3">
+                    <img src="img/album4.jpg" alt="Album 4">
+                    <img src="img/album5.jpg" alt="Album 5">
+                    <img src="img/album6.jpg" alt="Album 6">
+                    <img src="img/album7.jpg" alt="Album 7">
+                    <img src="img/album8.jpg" alt="Album 8">
+                    <img src="img/album9.jpg" alt="Album 9">
+                    <img src="img/album10.jpg" alt="Album 10">
+                  </div>
+                </div>
+              </div>
+              <!-- 휠 감지 영역 -->
+              <div class="ipod-wheel" id="iPodWheel"></div>
+            </div>
           </div>
 
           <!-- Buttons: mobile/tablet only -->
@@ -327,12 +350,12 @@
   <!-- ========== FOOTER ========== -->
   <footer id="cta">
     <div class="container text-center">
-      <h2 class="footer-title">[Footer Title]</h2>
+      <h2 class="footer-title">Start Listening Today</h2>
       <div class="footer-buttons">
-        <button type="button" class="btn-hero">[App Store]</button>
-        <button type="button" class="btn-hero">[Google Play]</button>
+        <button type="button" class="btn-hero">Get on App Store</button>
+        <button type="button" class="btn-hero">Get on Google Play</button>
       </div>
-      <p class="footer-description">[Footer description]</p>
+      <p class="footer-description">© 2026 Spotify Theme Demo by Saemi Yoon. All rights reserved.</p>
     </div>
   </footer>
 
