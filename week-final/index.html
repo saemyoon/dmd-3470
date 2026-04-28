@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TBD</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Spotify</title>
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -22,6 +21,10 @@
   <meta name="theme-color" content="#fafafa">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -93,32 +96,38 @@
     <!-- ========== SECTION 1 ========== -->
     <section id="features">
       <div class="container">
-        <h2 class="section-title">[Section Title]</h2>
-        <p class="section-subhead">[Section subhead]</p>
+        <h2 class="section-title">Everything You Need to Listen Better</h2>
+        <p class="section-subhead">Discover music, podcasts, and audiobooks — all in one place, personalized just for
+          you. <br>Stream, download, and listen seamlessly across all your devices.</p>
 
         <div class="row">
           <!-- Card 1 -->
           <div class="col-12 col-md-4">
             <div class="feature-card">
-              <div class="feature-icon">[Icon]</div>
-              <h3 class="card-title">[Card Title]</h3>
-              <p class="card-description">[Card description]</p>
+              <div class="feature-icon">
+                <i data-lucide="headphones"></i>
+              </div>
+              <h3 class="card-title">Discover & Personalize</h3>
+              <p class="card-description">Get recommendations built around your taste. From Daily Mixes to Discover
+                Weekly, Spotify learns what you love and keeps your queue fresh.</p>
             </div>
           </div>
           <!-- Card 2 -->
           <div class="col-12 col-md-4">
             <div class="feature-card">
-              <div class="feature-icon">[Icon]</div>
-              <h3 class="card-title">[Card Title]</h3>
-              <p class="card-description">[Card description]</p>
+              <div class="feature-icon"><i data-lucide="fast-forward"></i></div>
+              <h3 class="card-title">Listen Without Limits</h3>
+              <p class="card-description">Stream millions of songs and podcasts ad-free with Premium. Download your
+                favorites and listen anywhere, even offline.</p>
             </div>
           </div>
           <!-- Card 3 -->
           <div class="col-12 col-md-4">
             <div class="feature-card">
-              <div class="feature-icon">[Icon]</div>
-              <h3 class="card-title">[Card Title]</h3>
-              <p class="card-description">[Card description]</p>
+              <div class="feature-icon"><i data-lucide="music"></i></div>
+              <h3 class="card-title">Your Music, Everywhere</h3>
+              <p class="card-description">Pick up right where you left off. Spotify syncs seamlessly across your phone,
+                tablet, desktop, and smart speakers.</p>
             </div>
           </div>
         </div>
@@ -129,44 +138,49 @@
     <!-- ========== SECTION 2 ========== -->
     <section id="how-it-works">
       <div class="container">
-        <h2 class="section-title">[Section Title]</h2>
+        <!-- h2: 모바일/태블릿에서만 이미지 위에 표시 -->
+        <h2 class="section-title d-lg-none text-center">Get Started in Minutes</h2>
 
         <div class="row align-items-center">
           <!-- Right: image -->
           <div class="col-12 col-lg-6">
-            <img src="https://placehold.co/400x600" alt="App screenshot">
+            <img src="img/iphone_1.png" alt="App screenshot">
           </div>
           <!-- Left: steps -->
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-5 offset-lg-1">
+            <!-- h2: 데스크탑에서만 스텝 위에 표시 -->
+            <h2 class="section-title d-none d-lg-block">Get Started in Minutes</h2>
             <!-- Step 1 -->
             <div class="step">
-              <div class="step-icon">[Icon]</div>
+              <div class="step-icon"><i data-lucide="user-plus"></i></div>
               <div class="step-text">
-                <h3 class="step-title">[Step Title]</h3>
-                <p class="step-description">[Step description]</p>
+                <h3 class="step-title">Create Your Account</h3>
+                <p class="step-description">Sign up for free in seconds. No credit card needed to get started.</p>
               </div>
             </div>
             <!-- Step 2 -->
             <div class="step">
-              <div class="step-icon">[Icon]</div>
+              <div class="step-icon"><i data-lucide="search-check"></i></div>
               <div class="step-text">
-                <h3 class="step-title">[Step Title]</h3>
-                <p class="step-description">[Step description]</p>
+                <h3 class="step-title">Find What You Love</h3>
+                <p class="step-description">Search millions of songs, podcasts, and audiobooks. Follow artists and build
+                  your perfect playlist.</p>
               </div>
             </div>
             <!-- Step 3 -->
             <div class="step">
-              <div class="step-icon">[Icon]</div>
+              <div class="step-icon"><i data-lucide="music-2"></i></div>
               <div class="step-text">
-                <h3 class="step-title">[Step Title]</h3>
-                <p class="step-description">[Step description]</p>
+                <h3 class="step-title">Start Listening</h3>
+                <p class="step-description">Hit play and enjoy. Switch between devices anytime and pick up right where
+                  you left off.</p>
               </div>
             </div>
 
             <!-- App store buttons -->
             <div class="store-buttons">
-              <button type="button">[App Store]</button>
-              <button type="button">[Google Play]</button>
+              <button type="button" class="btn-outline">Get on App Store</button>
+              <button type="button" class="btn-outline">Get on Google Play</button>
             </div>
           </div>
 
@@ -180,14 +194,20 @@
         <div class="row align-items-center">
 
           <!-- Right: text -->
-          <div class="col-12 col-lg-6">
-            <h2 class="section-title">[Section Title]</h2>
-            <p class="section-description">[Description]</p>
-            <button type="button">[Read More]</button>
+          <div class="col-12 col-lg-6 pe-lg-5">
+
+            <h2 class="section-title">Made for Your Taste</h2>
+            <p class="section-description">Spotify builds your personal soundtrack from the moment you sign up. Based on
+              your listening habits, it creates Recommended Stations, curated mixes, and artist radio tailored
+              specifically to you. The more you listen, the smarter it gets — surfacing new artists you'll love while
+              keeping your favorite sounds front and center.
+
+            </p>
+            <button type="button" class="btn-outline">Learn More</button>
           </div>
           <!-- Left: image (TBD) -->
           <div class="col-12 col-lg-6">
-            <img src="https://placehold.co/400x600" alt="App screenshot">
+            <img src="img/iphone_2.png" alt="App screenshot">
           </div>
         </div>
       </div>
@@ -198,79 +218,89 @@
       <div class="container">
         <div class="row align-items-center">
 
-          <!-- Left: text -->
-          <div class="col-12 col-lg-6">
-            <h2 class="section-title">[Section Title]</h2>
-            <p class="section-description">[Description]</p>
-            <button type="button">[Read More]</button>
+          <!-- 이미지: 데스크탑 왼쪽, 모바일/태블릿 아래 -->
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <img src="img/iphone_3.png" alt="App screenshot">
           </div>
 
-          <!-- Right: image (TBD) -->
-          <div class="col-12 col-lg-6">
-            <img src="https://placehold.co/400x600" alt="App screenshot">
+          <!-- 텍스트: 데스크탑 오른쪽, 모바일/태블릿 위 -->
+          <div class="col-12 col-lg-6 ps-lg-5 order-1 order-lg-2">
+            <h2 class="section-title">More Than Just Music</h2>
+            <p class="section-description">Spotify is more than a music app. With Premium, you get unlimited access to
+              millions of audiobooks and thousands of podcasts — all in one place. Whether you're into true crime,
+              self-help, fiction, or daily news, there's always something worth listening to. Start a book on your
+              commute and finish it on your couch, without missing a beat.</p>
+            <button type="button" class="btn-outline">Learn More</button>
           </div>
 
         </div>
       </div>
     </section>
+    </section>
 
     <!-- ========== VIDEO SECTION ========== -->
-    <section id="video">
+    <section id="video"
+      style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/tutorial.jpg'); background-size: cover; background-position: center;">
       <div class="container text-center">
-        <h2 class="section-title">[Watch a Quick Tutorial]</h2>
-        <button type="button" class="play-button" aria-label="Play video">[Play]</button>
+        <h2 class="section-title" style="color: #fff;">Watch a Quick Tutorial</h2>
+        <button type="button" class="play-button" aria-label="Play video">
+          <i data-lucide="play"></i>
+        </button>
       </div>
     </section>
 
     <!-- ========== SECTION 5 ========== -->
     <section id="pricing">
       <div class="container">
-        <h2 class="section-title text-center">[Title]</h2>
+        <h2 class="section-title text-center">Choos Your Plan</h2>
 
         <div class="row">
           <!-- Plan 1 -->
           <div class="col-12 col-md-4">
             <div class="pricing-card">
-              <h3 class="plan-title">[Plan Title]</h3>
-              <p class="plan-description">[Short description]</p>
+              <p class="plan-tier">Starter</p>
+              <h3 class="plan-title">Free</h3>
+              <p class="plan-description">Per Month, No Credit Card Required</p>
               <ul class="plan-features">
-                <li>[Feature 1]</li>
-                <li>[Feature 2]</li>
-                <li>[Feature 3]</li>
-                <li>[Feature 4]</li>
-                <li>[Feature 5]</li>
+                <li><i data-lucide="check" class="plan-check"></i> Stream music with ads</li>
+                <li><i data-lucide="check" class="plan-check"></i> Shuffle play on mobile</li>
+                <li><i data-lucide="check" class="plan-check"></i> Listen on any device</li>
+                <li><i data-lucide="check" class="plan-check"></i> Discover Weekly & Daily Mixes</li>
+                <li><i data-lucide="check" class="plan-check"></i> Basic podcast access</li>
               </ul>
-              <button type="button">[Start Now]</button>
+              <button type="button" class="btn-outline">Start Now</button>
             </div>
           </div>
           <!-- Plan 2 -->
           <div class="col-12 col-md-4">
             <div class="pricing-card">
-              <h3 class="plan-title">[Plan Title]</h3>
-              <p class="plan-description">[Short description]</p>
+              <p class="plan-tier">Premium Individual</p>
+              <h3 class="plan-title">$9.99</h3>
+              <p class="plan-description">Per Month, Billed Monthly</p>
               <ul class="plan-features">
-                <li>[Feature 1]</li>
-                <li>[Feature 2]</li>
-                <li>[Feature 3]</li>
-                <li>[Feature 4]</li>
-                <li>[Feature 5]</li>
+                <li><i data-lucide="check" class="plan-check"></i> Ad-free music streaming</li>
+                <li><i data-lucide="check" class="plan-check"></i> Download up to 10,000 songs</li>
+                <li><i data-lucide="check" class="plan-check"></i> Listen offline on 5 devices</li>
+                <li><i data-lucide="check" class="plan-check"></i> Full on-demand playback</li>
+                <li><i data-lucide="check" class="plan-check"></i> Access to audiobooks</li>
               </ul>
-              <button type="button">[Start Now]</button>
+              <button type="button" class="btn-outline">Start Now</button>
             </div>
           </div>
           <!-- Plan 3 -->
           <div class="col-12 col-md-4">
             <div class="pricing-card">
-              <h3 class="plan-title">[Plan Title]</h3>
-              <p class="plan-description">[Short description]</p>
+              <p class="plan-tier">Premium Duo</p>
+              <h3 class="plan-title">$13.99</h3>
+              <p class="plan-description">Per Month, Billed Monthly</p>
               <ul class="plan-features">
-                <li>[Feature 1]</li>
-                <li>[Feature 2]</li>
-                <li>[Feature 3]</li>
-                <li>[Feature 4]</li>
-                <li>[Feature 5]</li>
+                <li><i data-lucide="check" class="plan-check"></i> 2 Premium accounts</li>
+                <li><i data-lucide="check" class="plan-check"></i> Ad-free music streaming</li>
+                <li><i data-lucide="check" class="plan-check"></i> Download up to 10,000 songs</li>
+                <li><i data-lucide="check" class="plan-check"></i> Listen offline on 5 devices each</li>
+                <li><i data-lucide="check" class="plan-check"></i> Access to audiobooks</li>
               </ul>
-              <button type="button">[Start Now]</button>
+              <button type="button" class="btn-outline">Start Now</button>
             </div>
           </div>
         </div>
@@ -281,9 +311,13 @@
     <!-- ========== USER REVIEW ========== -->
     <section id="reviews">
       <div class="container">
-        <h2 class="section-title text-center">[User Review]</h2>
+        <h2 class="section-title text-center">User Review</h2>
         <div class="review-card">
-          <p class="review-description">[Review text]</p>
+          <img src="img/review-img.png" alt="Sarah K." class="reviewer-img">
+          <p class="review-description">"Spotify completely changed how I listen to music. The personalized playlists
+            are scary accurate — it always knows exactly what I'm in the mood for. I can't imagine commuting without
+            it."</p>
+          <p class="reviewer-name">— Sarah K., Premium User</p>
         </div>
       </div>
     </section>
@@ -295,8 +329,8 @@
     <div class="container text-center">
       <h2 class="footer-title">[Footer Title]</h2>
       <div class="footer-buttons">
-        <button type="button">[App Store]</button>
-        <button type="button">[Google Play]</button>
+        <button type="button" class="btn-hero">[App Store]</button>
+        <button type="button" class="btn-hero">[Google Play]</button>
       </div>
       <p class="footer-description">[Footer description]</p>
     </div>
